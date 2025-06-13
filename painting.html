@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin-bottom: 20px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: 0;
+        padding-top: 40px;
+      }
+
+      .parent-flex img {
+        margin: 10px;
+        height: 130px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .parent-flex img:hover {
+        transform: translateY(-20px) scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);      
+      }
+      
+      #painting-spotlight {
+        height: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+      }
+      
+      #big-painting-div {
+        display: flex;
+        align-items: center;
+        justidy-content: center;
+      }
+      
+      #top-div-painting {
+        display:flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        align-items: stretch;
+        height: 500px;
+      }
+      
+      #painting-info {
+        font-size: 40px;
+        
+      }
+      
+      #painting-title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      #info-div {
+        diplay: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 20px
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Art
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="painting.html">Paintings</a>
+          <a href="novel.html">Graphic Novel</a>
+          <a href="photos.html">Photos</a>
+        </div>
+      </div>
+      <a href="pastwebsites.html">Web Dev</a>
+      <a style="float: right" target="_blank" href="https://www.instagram.com/livv.18/"
+          ><img
+            src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/161d6a17-56e8-4fac-99f0-1f19ebedbd1f.image.png?v=1748008372742"
+            style="width: 35px; margin: -5px"
+        /></a>
+    </div>
+    
+<!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+   
+    <div id="top-div-painting">
+      <div id="info-div"> 
+        <div id="painting-title"
+             style="display: none"
+             >
+        Tittle of Piece  
+        </div>
+        <div id="painting-info"
+             style="display: none"
+             >
+        Piece Info
+      </div>
+      </div>
+      
+      <div id="big-painting-div">
+        <img id="painting-spotlight"
+             style="display: none"
+             src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409">
+      </div>
+    </div>
+    
+    
+    
+<!-- Scroll paintings bottom -->
+    <div class="parent-flex fade-in">
+      <img
+           id="birthday-art" class="tiny-painting"
+           src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202024-12-25%20at%201.50.44%20AM.png?v=1748871862235"
+           data-title="Reflection of Me"
+           data-info="Oil on Canvas<br>2024"
+      />
+      <img
+           id="blue-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202024-12-20%20at%207.07.57%20PM-min%202.png?v=1748871863878"
+           data-title="Rotting"
+           data-info="Acrylic on Canvas<br>2023"
+      />
+      <img
+           id="candle-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_3581.jpeg?v=1748871865609"
+           data-title="Hanging On"
+           data-info="Charcoal on Paper<br>2022"
+      />
+      <img
+           id="beach-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202024-12-20%20at%207.08.28%20PM.png?v=1748871867523"
+           data-title="Beach Life"
+           data-info="Study from Observation<br>Acrylic on Paper<br>2024"
+      />
+      <img
+           id="tea-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-01-01%20at%205.34.24%20PM.png?v=1748871869577"
+           data-title="Tea Time"
+           data-info="Acrylic on Canvas<br>2024"
+      />
+      <img
+           id="cake-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_7413%203.20.21%20PM.jpeg?v=1748871871667"
+           data-title="American Birthday"
+           data-info="Watercolor on Paper<br>2023"
+      />
+      <img
+           id="fish-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202024-12-25%20at%202.15.22%20AM.png?v=1748871874829"
+           data-title="City Underwater"
+           data-info="Marker on Paper<br>2023"
+      />
+      <img
+           id="popsicle-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202024-12-27%20at%2011.12.43%20PM.png?v=1748871878857"
+           data-title="Summer Day"
+           data-info="Study from Observation<br>Acrylic on Paper<br>2024"
+      />
+      <img
+           id="grandma-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_9772.JPG?v=1748871881604"
+           data-title="Rebirth"
+           data-info="Acrylic on Canvas<br>2024"
+      />
+      <img
+           id="1984-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_0650.jpeg?v=1748871883223"
+           data-title="Authoritarianism"
+           data-info="Digital<br>2022"
+      />
+      <img
+           id="train-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_6339.jpeg?v=1748871885276"
+           data-title="Train of Thought"
+           data-info="Tempera on Paper<br>2023"
+      />
+      <img
+           id="itacoa-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_6136.jpg?v=1748871887860"
+           data-title="Late Night Conversations"
+           data-info="Oil on Canvas<br>2024"
+      />
+      <img
+           id="apple-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_7200%203.20.21%20PM.jpeg?v=1748871889509"
+           data-title="Apple Watching"
+           data-info="Study<br>Oil on Canvas<br>2022"
+      />
+      <img
+           id="me-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_4152.JPG?v=1748871891737"
+           data-title="Spikes and Thorns"
+           data-info="Oil on Canvas<br>2025"
+      />
+      <img
+           id="colorful-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/E2CB67EE-33D1-4F52-AC28-2EE83D313B8D.JPG?v=1748871897670"
+           data-title="No Way Out"
+           data-info="(4 Piece Series)<br>Acrylic on Paper<br>2023"
+      />
+      <img
+           id="b&w-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_6344.jpeg?v=1748871905060"
+           data-title="No Way Out"
+           data-info="Graphite on Paper<br>2023"
+      />
+      <img
+           id="clown-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8518.jpg?v=1748871909348"
+           data-title="Clowning Around"
+           data-info="Acrylic on Canvas<br>2025"
+      />
+      <img
+           id="aquarium-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_0322.JPG?v=1748871968800"
+           data-title="There's Plenty of Fish in the Sea"
+           data-info="Acrylic on Canvas<br>2025"
+      />
+      <img
+           id="arthur-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_4579%20copy.JPG?v=1748872141345"
+           data-title="Velha Infância"
+           data-info="Mixed Media<br>2024"
+      />
+      <img
+           id="dad-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-02%20at%2010.03.06%20AM.png?v=1748873018107"
+           data-title="Father and Daughter"
+           data-info="Watercolor on Paper<br>2022"
+      />
+      <img
+           id="bflower-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-02%20at%2010.09.49%20AM.png?v=1748873423430"
+           data-title="Grandma's House"
+           data-info="Acrylic on Canvas<br>2024"
+      />
+      <img
+           id="rflower-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-02%20at%2010.11.57%20AM.png?v=1748873531038"
+           data-title="Mal Me Quer"
+           data-info="Acrylic on Canvas<br>2025"
+      />
+       <img
+           id="gflower-art" class="tiny-painting"
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-02%20at%2010.13.53%20AM.png?v=1748873652654"
+            data-title="Bem Me Quer"
+            data-info="Acrylic on Canvas<br>2025"
+      />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+     $(document).ready(function () {
+    $(".tiny-painting").click(function () {
+      const newSrc = $(this).attr("src");
+      const newTitle = $(this).attr("data-title");
+      const newInfo = $(this).attr("data-info");
+
+      $("#painting-spotlight").fadeOut(400, function () {
+        $(this).attr("src", newSrc).fadeIn(400);
+      });
+
+      $("#painting-title").fadeOut(400, function () {
+        $(this).text(newTitle).fadeIn(400);
+      });
+
+      $("#painting-info").fadeOut(400, function () {
+        $(this).html(newInfo).fadeIn(400);
+      });
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+
+    </script>
+  </body>
+</html>

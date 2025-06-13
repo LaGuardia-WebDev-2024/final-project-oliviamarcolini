@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Styling Only Related To THIS Page */
+      #horizontal-photo-div {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      #horizontal-photo-div img {
+        height: 380px;
+        width: 550px;
+        object-fit: cover;
+        margin: 20px;
+        opacity: 1;
+      }
+
+
+      #vertical-photo-div {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      #vertical-photo-div img {
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+        margin: 20px;
+        opacity: 1;
+      }
+
+      #vertical-photo-div img:hover {
+        opacity: 0.4;
+      }
+      
+/* horizontal photos */
+      .image {
+        position:relative;
+        height: 380px;
+        width: 550px;
+        object-fit: cover;
+        margin: 20px;
+        
+      }
+      
+      .image-img {
+        display: block;
+        width: 100%;
+      }
+      
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+      }
+      
+      .image-overlay:hover {
+        opacity: 1;
+      }
+      
+      .image-location {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .image-camera {
+        font-size: 1.2em;
+        margin-top: 0.25em;
+        text-align: center;
+      }
+/* vertical photos */
+      .image-v {
+        position:relative;
+        width: 350px;
+        height: 500px;
+        object-fit: cover;
+        margin: 20px;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Art
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="painting.html">Paintings</a>
+          <a href="novel.html">Graphic Novel</a>
+          <a href="photos.html">Photos</a>
+        </div>
+      </div>
+      <a href="pastwebsites.html">Web Dev</a>
+      <a
+        style="float: right"
+        target="_blank"
+        href="https://www.instagram.com/livv.18/"
+        ><img
+          src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/161d6a17-56e8-4fac-99f0-1f19ebedbd1f.image.png?v=1748008372742"
+          style="width: 35px; margin: -5px"
+      /></a>
+    </div>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>Some Photos I took for funsies</h1>
+
+    <div id="horizontal-photo-div">
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/53b0a338-a7e5-487c-b5b7-f1892ff57aa6.JPG?v=1748983446862"
+          class="image-img"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Piratininga
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      
+      <div class="image">
+         <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/99394C2A-3C04-4378-B220-E2A4E232EB6E.jpg?v=1748983449077"
+           class="image-img"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Times Square
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+     
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC_6013.JPG?v=1748983458593"
+           class="image-img"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Roosevelt Island
+          </div>
+          <p class="image-camera">
+            Nikon D7000
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC02523.JPG?v=1748983479007"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Florida<br>Miami 
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+         <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC02536.JPG?v=1748983558814"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Florida<br>Miami 
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+     <div class="image">
+       <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC02547.JPG?v=1748983562273"
+      />
+       <div class="image-overlay">
+          <div class="image-location">
+            Miami<br>Bayside Marketplace
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+       <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC03350.JPG?v=1748983584789"
+      /> 
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Queens
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1912.JPG?v=1748984198852"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Icaraí
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_0700.jpg?v=1748983617183"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Campo de São Bento
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_0570.JPG?v=1748983605375"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Rio de Janeiro<br>Centro do Rio
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1961.JPG?v=1748984239101"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Ilha da Boa Viagem
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1902.JPG?v=1749009073724"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Met Cloisters
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8383.JPG?v=1749517808241">
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Soho
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/SAM_0106.jpg?v=1749518450495">
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Manhattan
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    
+    <div id="vertical-photo-div">
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1977.JPG?v=1748984259585"  
+             class="image-img"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Ilha da Boa Viagem
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/c263bb63-432c-49a0-8de1-020b4cac4ec8.jpg?v=1748983453570"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Praia de Icaraí
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1931.JPG?v=1748984203136"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Ilha da Boa Viagem
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC02525.JPG?v=1748983538136"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Florida<br>Miami 
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+       <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.48.23%20PM.png?v=1748983712049"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Chelsea Market
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.55.22%20PM.png?v=1748984132711"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Little Island
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.53.43%20PM.png?v=1748984030754"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Chelsea Market
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.54.15%20PM.png?v=1748984067945"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Chelsea Market
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.55.00%20PM.png?v=1748984107482"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Chelsea Market
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-03%20at%204.55.53%20PM.png?v=1748984163749"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Brooklyn
+          </div>
+          <p class="image-camera">
+            Iphone 14 Plus
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1835.JPG?v=1748984184280"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Met Cloisters
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1892.JPG?v=1748984193030"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Met Cloisters
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1975.JPG?v=1748984235132"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Ilha da Boa Viagem
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1974.JPG?v=1748984245088"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>MAC
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_4617.JPG?v=1748984283706"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            Niterói<br>Itacoatiara
+          </div>
+          <p class="image-camera">
+            Sony Cyber-shot
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8109.JPG?v=1748984311268"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Central Park
+          </div>
+          <p class="image-camera">
+            Iphone 14 Plus
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+       <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8511.jpg?v=1748984316851"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Manhattan
+          </div>
+          <p class="image-camera">
+            Iphone 14 Plus
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC_6168.JPG?v=1748983460859"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Roosevelt Island
+          </div>
+          <p class="image-camera">
+            Nikon D7000
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+       <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC_6183.JPG?v=1748983464298"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Roosevelt Island
+          </div>
+          <p class="image-camera">
+            Nikon D7000
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/DSC_6190.JPG?v=1748983473132"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Roosevelt Island
+          </div>
+          <p class="image-camera">
+            Nikon D7000
+          </p>
+        </div>
+      </div>
+      <div class="image-v">
+        <img
+        src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/04F8D84B-3188-48AC-BFB3-9F9499446E15.JPG?v=1749009622459"
+      />
+        <div class="image-overlay">
+          <div class="image-location">
+            NYC<br>Astoria
+          </div>
+          <p class="image-camera">
+            Iphone 14 Plus
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
