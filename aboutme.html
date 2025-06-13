@@ -3,88 +3,222 @@
   <head>
     <meta charset="utf-8" />
     <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
       .parent-flex {
         display: flex;
-        background-color: purple;
+        flex-direction: column;
+        display: flex;
         align-items: center;
         justify-content: space-around;
         margin-bottom: 50px;
       }
 
       .parent-flex img {
-        width: 150px;
         padding: 20px;
       }
-      .child-flex p {
-        background-color: pink;
-        padding: 20px;
+      
+      .box {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 5px;
+        width: 70%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        padding: 10px;
+    }
+
+     .box::after {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .box:hover {
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+    }
+
+    .box:hover::after {
+        opacity: 1;
+    }
+      
+      .me-photos {
+        height: 400px;
+        width: 300px;
+        object-fit: cover;
         margin: 20px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
+      
+      .me-photos::after {
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+      .me-photos:hover {
+        -webkit-transform: scale(1.15, 1.15);
+        transform: scale(1.15, 1.15);
+    }
+
+     .me-photos:hover::after {
+        opacity: 1;
+    }
+      
+      
+       .f-photos {
+        position: relative;
+        object-fit: cover;
+        height: 250px;
+        width: 200px;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      
+      .f-photos::after {
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+      .f-photos:hover {
+        -webkit-transform: scale(1.15, 1.15);
+        transform: scale(1.15, 1.15);
+    }
+
+     .f-photos:hover::after {
+        opacity: 1;
+    }
+      
+      .fam-photos {
+        margin-bottom: 20px;
+      }
+
+      
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Art
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="painting.html">Paintings</a>
+          <a href="novel.html">Graphic Novel</a>
+          <a href="photos.html">Photos</a>
+        </div>
+      </div>
+      <a href="pastwebsites.html">Web Dev</a>
+      <a style="float: right" target="_blank" href="https://www.instagram.com/livv.18/"
           ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
+            src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/161d6a17-56e8-4fac-99f0-1f19ebedbd1f.image.png?v=1748008372742"
+            style="width: 35px; margin: -5px"
         /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
+    </div>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>About Me</h1>
+    <h1 class="fade-in">About Me</h1>
     <div class="parent-flex">
-      <div class="child-flex">
+      <div class="child-flex fade-in">
         <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
+          src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/Screenshot%202025-06-12%20at%209.43.03%20PM.png?v=1749779011607"
+             class="me-photos"/>
       </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+      <div class="box">
+        <p class="fade-in">
+          Hi there! My name is Olivia, I'm a senior art major at LaGuardia High School. I'm Brazilian, Carioca born and raised, and have been living in NYC for the past 3 years. </p>
+           <p class="fade-in">You probably know some things about me from my previous websites, like the fact that I'm obsessed with Monster High, that I'm a fan of videogames, or that visiting Italy is a dream of mine. </p>
+          <p class="fade-in">This website showcases some of my previous Web Development projects, the art I've made during my years at Lag, and some more info about me. I hope you enjoy!
         </p>
       </div>
     </div>
-    <div class="parent-flex">
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+    <div class="parent-flex"
+         id="fam-div">
+      <div class="fam-photos fade-in">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_5248.jpg?v=1749740310567"
+             class="f-photos fade-in">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8697.JPG?v=1749740308916"
+             class="f-photos fade-in">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_1967.JPG?v=1749744989969"
+             class="f-photos fade-in">
+      </div>
+      <div class="box">
+        <p class="fade-in">
+          I'm an older sister to two amazing brothers, Gabriel and Arthur. Gabriel is 14, and he's an amazing basketball player, and sweetheart (when he wants to be). Arthur is turning 6, his favorite game is minecraft, and he is quite literally a ray of sunshine. I've honestly never seen a kid that's always so radiant and happy. </p>   
+        <p class="fade-in">I have a dog named Leeloo, she's turning 8, I love her very much even though she can be a meanie. 
         </p>
       </div>
-      <div class="child-flex">
-        <img
-          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-        />
-      </div>
     </div>
+    
+    <div class="parent-flex fade-in">
+      <div class="fam-photos fade-in">
+        <img
+             src="https://cdn.glitch.me/a92ab5a3-3249-4e73-a152-4a28ed854d6a/RPReplay_Final1749748124.gif?v=1749773658975"
+             class="f-photos">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/3c8efade-fbb6-40ca-b6ea-b95835549c60.gif?v=1749775053291"
+             class="f-photos fade-in">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/315c1b3c-9a99-4d4a-bc6c-d5fe971dc581.gif?v=1749776097298"
+             class="f-photos fade-in">
+    <img
+         src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_8678.gif?v=1749778192942"
+         class="f-photos fade-in">
+        <img
+             src="https://cdn.glitch.global/a92ab5a3-3249-4e73-a152-4a28ed854d6a/IMG_7096.gif?v=1749778200476"
+             class="f-photos fade-in">
+        
+      </div>
+        <div class="box">
+          <p class="fade-in">
+           Some of my all time favorite things to do is: 
+          <ul>
+            <li class="fade-in">playing games, let it be board games or online games. I especially love story games, or ones I can play with friends! </li>
+            <li class="fade-in">binge watching shows with my mom. Right now we're watching Drag Race!</li>
+            <li class="fade-in">annoying my brother and asking him to play roblox with me</li>
+            <li class="fade-in">playing just dance</li>
+            <li class="fade-in">going on rollercoasters!!!</li>
+            <li class="fade-in">doing literally anything (and nothing at all) with my friends</li>
+            <li class="fade-in">making art</li>
+            <li class="fade-in">sleepingggg</li>
+        </ul>
+        </p>
+        </div>
+        
+      </div>
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+</script>
   </body>
 </html>
